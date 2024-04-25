@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "bootstrap5",
+    'bootstrap3',
     "accounts",
 ]
 
@@ -120,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = BASE_DIR[os.path.join('static')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
 LOGIN_REDIRECT_URL = 'landing_page'
 LOGOUT_REDIARECT_URL = 're-entry'

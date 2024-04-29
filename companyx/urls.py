@@ -40,6 +40,6 @@ urlpatterns = [
     path("",views.HomePage.as_view(), name='home'),
     path("accounts",include('accounts.urls',namespace='accounts')),
     path('accounts/',include('django.contrib.auth.urls')),
-    path('landing_page/',views.LandingPage.as_view(), name='landing'),
+    path('landing-page/',views.LandingPage.as_view(), name='landing_page'),
     path("re-entry_page/",views.ReEntryPage.as_view(),name='re-entry'),]
 

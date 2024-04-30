@@ -1,11 +1,17 @@
+from django.urls import reverse
+from django.http import HttpResponseRedirect
 from django.views.generic import TemplateView
 
 class LandingPage(TemplateView):
     template_name = 'landing_page.html'
 
-class ReEntryPage(TemplateView):
+class ReEntry(TemplateView):
     template_name = 're-entry_page.html'
 
-
 class HomePage(TemplateView):
-    template_name = 'index.html'
+    template_name = "index.html"
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return HttpResponseRedirect(reverse("test"))
+        return super().get(request, *args, **kwargs)

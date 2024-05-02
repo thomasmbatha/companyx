@@ -37,8 +37,8 @@ from . import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.HomePage.as_view(), name="home"),
-    path("landing/", views.LandingPage.as_view(), name="landing"),
-    path("re-entry/", views.ReEntry.as_view(), name="re-entry"),
+    path("landing-page/", views.LandingPage.as_view(), name="landing_page"),
+    path("re-entry/", views.ReEntry.as_view(), name="re-entry_page"),
     path("accounts/", include("accounts.urls", namespace="accounts")),
     path("accounts/", include("django.contrib.auth.urls")),
 ]

@@ -4,13 +4,13 @@ from django.views.generic import CreateView
 
 from . import forms
 
-class SignUpView(CreateView):
+class SignUp(CreateView):
     form_class = forms.UserCreateForm
     success_url = reverse_lazy("login")
     template_name = "accounts/signup.html"
 
 class Login(LoginView):
-    template_name = 'accounts/login.html'  # Adjust this to your login template path
+    template_name = 'accounts/login.html'
 
 class Logout(LogoutView):
-    template_name = 'accounts/logout.html'  # Adjust this to your logout template path
+    template_name = 'accounts/logout.html'

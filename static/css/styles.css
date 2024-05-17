@@ -1,8 +1,46 @@
-.navbar{
-    margin-left: 10px;
-    margin-right: 10px;
+body {
+    margin-left: 20px;
+    margin-right: 20px;
 }
-h1{
-    text-align: center;
-    margin-top: 5px;
+
+h1 {
+    color: rgb(4, 150, 150);
 }
+
+/* teal-border button */
+.teal-border {
+    color: rgb(4, 150, 150);
+    background-color: transparent;
+    border: 3px solid rgb(4, 150, 150);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+}
+.teal-border:hover {
+    color: rgb(4, 150, 150);
+    background-color: transparent;
+    border: 3px solid transparent;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+}
+/* teal-border button */
+
+/* teal-full button */
+.teal-full {
+    color: rgb(252, 252, 252);
+    background-color: rgb(4, 150, 150);
+    border: 2px solid rgb(4, 150, 150);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.teal-full:hover {
+    color: rgb(4, 150, 150);
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+}
+/* teal-full button */

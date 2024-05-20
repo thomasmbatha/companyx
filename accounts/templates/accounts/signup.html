@@ -4,11 +4,17 @@
     | Signup
 {% endblock  %}
 {% block content %}
-    <h1>Sign Up</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {% bootstrap_form form %}
-        <a href="{% url 'home' %}" class="btn teal-border" style="margin-right:7px ; margin-top:5px">Cancel</a>
-        <input type="submit" class="btn teal-full" value="Sign Up" style="margin-top:5px">
-    </form>
+<div class="card signup-card">
+    <div class="signup-form">
+        <h1>Sign Up</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <div class="signup-buttons">
+                <a href="{% url 'home' %}" class="btn teal-border">Cancel</a>
+                <input type="submit" class="btn teal-full" value="Sign Up">    
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock %}

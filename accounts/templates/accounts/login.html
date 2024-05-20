@@ -5,14 +5,18 @@
 {% endblock  %}
 
 {% block content %}
-    <div class="container">
+<div class="card login-card">
+    <div class="login-form">
         <h1>Log in</h1>
         <form method="POST">
             {% csrf_token%}
             {% bootstrap_form form %}
-            <a href="{% url 'home' %}" class="btn teal-border" style="margin-left:0px ;">Cancel</a>
-            <input type="submit" class="btn teal-full" value="Login">
-
+            <div class="login-btn">
+                <a href="{% url 'home' %}" class="btn teal-border" style="margin-left:0px ;">Cancel</a>
+                <input type="submit" class="btn teal-full" value="Login">    
+            </div>
         </form>
-    </div>
+    </div> 
+</div>
+
 {% endblock %}

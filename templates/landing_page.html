@@ -1,7 +1,54 @@
 {% extends 'base.html' %}
 
 
-{% block content %}
-    <h1 id="landing_h1" style="text-align: center; margin-top: 10px;">Welcome to Company - X</h1>
-{% endblock  %}
+{% block content %}    
+  {% comment %} <div class="py-4">
+    <header class="pb-10 mb-20 border-bottom">
+    </header> {% endcomment %}
+
+    <div class="p-2 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-1">
+        <h1 class="display-5 fw-bold">UNCOVER YOUR POTENTIAL.</h1>
+        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+      </div>
+    </div>
+    <div class="pb-1 mb-5 py-2 border-bottom">
+    </div>
+    <div class="pb-2 mb-5 py-2 border-bottom">
+        <p>NO.1</p>
+    </div>
+    <div class="pb-2 mb-5 py-2 border-bottom">
+        <p>NO.1</p>
+    </div>
+        <p>NO.1</p>
+
+
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Change the background</h2>
+          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+          <button class="btn btn-outline-light" type="button">Example button</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Add borders</h2>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+          <button class="btn btn-outline-secondary" type="button">Example button</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-body-secondary border-top">
+      &copy; 2024
+    </footer>
+  </div>
+</main>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+   {% endblock  %}
     

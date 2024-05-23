@@ -8,7 +8,7 @@ h1 {
 }
 
 /* teal-border button */
-.teal-border {
+.btn.teal-border {
     color: rgb(4, 150, 150);
     background-color: transparent;
     border: 1.5px solid rgb(4, 150, 150);
@@ -21,7 +21,7 @@ h1 {
     user-select: none;
     width: 65px;    
 }
-.teal-border:hover {
+.btn.teal-border:hover {
     color: rgb(4, 150, 150);
     background-color: transparent;
     border: 1.5px solid transparent;
@@ -36,7 +36,7 @@ h1 {
     width: 65px;
 }
 @media (min-width: 200px) {
-    .teal-border {
+    .btn.teal-border {
       font-size: 0.7rem;
       width: 65px;
       text-align: center;
@@ -45,12 +45,12 @@ h1 {
 /* teal-border button */
 
 /* teal-full button */
-.teal-full {
+.btn.teal-full {
     color: rgb(252, 252, 252);
     background-color: rgb(4, 150, 150);
     border: 1.5px solid rgb(4, 150, 150);
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-align: center;
     text-anchor: middle;
     -webkit-user-select: none;
@@ -58,11 +58,11 @@ h1 {
     user-select: none;
     width: 65px;
 }
-.teal-full:hover {
+.btn.teal-full:hover {
     color: rgb(4, 150, 150);
     background-color: transparent;
     border: 1.5px solid transparent;
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-align: center;
     text-anchor: middle;
     -webkit-user-select: none;
@@ -72,8 +72,8 @@ h1 {
     width: 65px;
 }
 @media (min-width: 200px) {
-    .teal-full {
-      font-size: 1rem;
+.btn.teal-full {
+      font-size: 0.7rem;
       width: 65px;
       text-align: center;
     }
@@ -84,33 +84,32 @@ h1 {
 .btn.turquoise-border {
   color: rgb(252, 252, 252);
   color: rgb(0, 215, 193);
-  border: 1.5px solid rgb(0, 215, 193);
+  border: 2px solid rgb(0, 215, 193);
   border-radius: 6px;
   font-size: 0.7rem;
+  font-weight: bold;
   text-align: center;
   text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   width: 165px;
 }
 .btn.turquoise-border:hover {
   color: rgb(0, 215, 193);
   background-color: transparent;
-  border: 1.5px solid transparent;
+  border: 2px solid transparent;
   font-size: 1rem;
+  font-weight: bold;
   text-align: center;
   text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
-  border-radius: px;
+  border-radius: 6px;
   width: 165px;
 }
 @media (min-width: 200px) {
   .btn.turquoise-border {
     font-size: 1rem;
-    width: 150px;
+    font-weight: bold;
+    width: 165px;
     text-align: center;
   }
 }
@@ -138,15 +137,15 @@ h1 {
     margin: top 10px;
 }
 
-.navbar-container {
+/* .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .navbar-nav {
     display: flex;
-    list-style: none;
+    /* list-style: none; */
     margin: 0;
     padding: 0;
 }
@@ -216,12 +215,22 @@ h1 {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
-
-  /* .bd-mode-toggle {
-    z-index: 1500;
-  }
-
-  .bd-mode-toggle .dropdown-menu .active .bi {
-    display: block !important;
-  } */
 /* jumbothron */
+
+/* navbar_base */
+.navbar{
+    padding-bottom: 400px;
+    margin-left: 0px,;
+    margin-right: 0px;
+}
+body:not(.navbar){
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.navbar-background {
+    background-image: url("../images/card-soft-template-paper-report.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+/* navbar_base */

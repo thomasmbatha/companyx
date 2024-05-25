@@ -1,4 +1,4 @@
-body {
+main {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -9,9 +9,9 @@ h1 {
 
 /* teal-border button */
 .btn.teal-border {
-    color: rgb(4, 150, 150);
+    color: #049696;
     background-color: transparent;
-    border: 1.5px solid rgb(4, 150, 150);
+    border: 1.5px solid #049696;
     border-radius: 6px;
     font-size: 0.7rem;
     text-align: center;
@@ -83,7 +83,7 @@ h1 {
 /* turquoise-full button */
 .btn.turquoise-border {
   color: rgb(252, 252, 252);
-  color: rgb(0, 215, 193);
+  color: #00d7c1;
   border: 2px solid rgb(0, 215, 193);
   border-radius: 6px;
   font-size: 0.7rem;
@@ -223,14 +223,9 @@ h1 {
     margin-left: 0px,;
     margin-right: 0px;
 }
-body:not(.navbar){
-    margin-left: 0px;
-    margin-right: 0px;
-}
 .navbar-background {
-    background-image: url("../images/card-soft-template-paper-report.jpg");
+    background: url("../static/myvid.mp4");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
 }
 /* navbar_base */

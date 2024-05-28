@@ -15,38 +15,38 @@
 </head>
 <body>
     <header>
-        <div class="hero">
-            <h1>Hello World</h1>
+        <div class="navbar-background">
+            <nav class="navbar">
+                <!-- Add the video element for the background -->
+                <video class="video-bg" autoplay muted loop>
+                    <source src="{% static 'videos/coffee_vid.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="container-fluid navbar-container">
+                    <a class="navbar-brand" href="#"><img src="{% static 'images/parrot_tee_full_logo.png' %}" alt="image not available" style="height: 70px;"></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            {% if user.is_authenticated %}
+                            <a href="{% url 'accounts:logout' %}" class="btn teal-full">Log out</a>
+                            {% else %}
+            
+                            {% block home_button %}
+                                <a href="{% url 'home' %}" class="btn teal-border">Home</a>
+                            {% endblock %}
+                            
+                            <a href="{% url 'accounts:login' %}" class="btn teal-border">Log in</a>
+                            <a href="{% url 'accounts:signup' %}" class="btn teal-full">Sign up</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <video class="video-bg" autoplay muted loop>
                 <source src="{% static 'videos/coffee_vid.mp4' %}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        {% comment %} <nav class="navbar navbar-background">
-            <!-- Add the video element for the background -->
-            <video class="video-bg" autoplay muted loop>
-                <source src="{% static 'videos/coffee_vid.mp4' %}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="container-fluid navbar-container">
-                <a class="navbar-brand" href="#"><img src="{% static 'images/parrot_tee_full_logo.png' %}" alt="image not available" style="height: 70px;"></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        {% if user.is_authenticated %}
-                        <a href="{% url 'accounts:logout' %}" class="btn teal-full">Log out</a>
-                        {% else %}
-        
-                        {% block home_button %}
-                            <a href="{% url 'home' %}" class="btn teal-border">Home</a>
-                        {% endblock %}
-        
-                        <a href="{% url 'accounts:login' %}" class="btn teal-border">Log in</a>
-                        <a href="{% url 'accounts:signup' %}" class="btn teal-full">Sign up</a>
-                        {% endif %}
-                    </li>
-                </ul>
-            </div>
-        </nav> {% endcomment %}
+        {% comment %} {% endcomment %}
     </header>
 
     <main>

@@ -10,12 +10,24 @@
         | Home 
     {% endblock  %}
     </title>
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/bird_logo.png' %}">
+    <link rel="shortcut icon" width="20" type="image/png" href="{% static 'images/bird_logo.png' %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-background">
+        <div class="hero">
+            <h1>Hello World</h1>
+            <video class="video-bg" autoplay muted loop>
+                <source src="{% static 'videos/coffee_vid.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        {% comment %} <nav class="navbar navbar-background">
+            <!-- Add the video element for the background -->
+            <video class="video-bg" autoplay muted loop>
+                <source src="{% static 'videos/coffee_vid.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class="container-fluid navbar-container">
                 <a class="navbar-brand" href="#"><img src="{% static 'images/parrot_tee_full_logo.png' %}" alt="image not available" style="height: 70px;"></a>
                 <ul class="navbar-nav">
@@ -34,7 +46,7 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> {% endcomment %}
     </header>
 
     <main>
@@ -49,7 +61,5 @@
     <footer class="pt-3 mt-4 text-body-secondary border-top">
         &copy; 2024
     </footer>
-
-
 </body>
 </html>

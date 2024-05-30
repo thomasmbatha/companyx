@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'karla', sans-serif;
+}
+body{
+  color: #fff;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: url('image.png');
+  background-position: center;
+  background-size: cover;
+  padding-top: 35px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    font-size: 40px;
+}
+.logo span{
+    color: #00D7C1;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 800;
+
+}
+.marketing-btn.home a{
+    color: #049696;
+    font-weight: 700;
+}
+.marketing-btn.home a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #049696;
+    transform: scaleX(0); 
+}
+.marketing-btn a {
+    position: relative;
+    text-decoration: none;
+}
+
+.marketing-btn a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #049696; /* Matches the text color */
+    transform: scaleX(0); 
+    /* transform-origin: bottom right; */
+}
+
+.marketing-btn a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.login, .signup{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.content{
+    margin-top: 12%;
+    max-width: 600px;
+}
+.content h3{
+    font-size: 55px;
+}
+.content p{
+    margin-top: 10px;
+    line-height: 25px;
+}
+.link{
+    margin-top: 30px;
+}
+.link .hire {
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    padding: 9px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    border: 1px solid transparent;
+
+}
+.link .hire:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}

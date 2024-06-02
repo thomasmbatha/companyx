@@ -1,15 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'karla', sans-serif;
-}
-body{
-  color: #130c0c;
-}
-.container{
-  width: 100%;
-  height: 100%;
-  background-image: url('https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg?w=900&t=st=1717084585~exp=1717085185~hmac=2f66a44996d2962ea8e0794af32c7642ead42b3462104ed61b2ca20d5f7fa8da');
+  font-family: 'Poppins', sans-serif;
 }

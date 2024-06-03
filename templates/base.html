@@ -8,36 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="shortcut icon" type="image/png" href="{% static 'images/bird_logo.png' %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    {% block styles %}
-        <style>
-            /* Default button styles */
-            .nav-link {
-                font-weight: bold;
-                color: #049696;
-            }
-
-
-            /* Media query for small screens */
-            @media (max-width: 576px) {
-                .nav-link::after {
-                    width: 100%; /* Set width to 100% for small screens */
-                }
-                .nav-link::after {
-                    margin-top: 4px; /* Reduce space between button and underline */
-                }
-            }
-
-            /* Media query for medium screens */
-            @media (min-width: 576px) and (max-width: 768px) {
-                /* Adjust styles for medium screens if needed */
-            }
-
-            /* Media query for large screens */
-            @media (min-width: 768px) {
-                /* Adjust styles for large screens if needed */
-            }
-                    </style>
-                {% endblock %}
+    {% block styles %}<style></style>{% endblock %}
 </head>
 <body>
     <header>

@@ -168,3 +168,33 @@ header .navbar {
     transition: width 0.3s;
   }
 }
+  /* Default button styles */
+  .nav-link {
+    font-weight: bold;
+    color: #049696;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .nav-link::after {
+        width: 100%; /* Set width to 100% for small screens */
+    }
+    .nav-link::after {
+        margin-top: 4px; /* Reduce space between button and underline */
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 576px) and (max-width: 768px) {
+  .nav-link::after {
+    width: 100%; /* Set width to 100% for small screens */
+}
+.nav-link::after {
+    margin-top: 4px; /* Reduce space between button and underline */
+}}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+    /* Adjust styles for large screens if needed */
+}

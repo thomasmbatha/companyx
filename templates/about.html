@@ -1,30 +1,13 @@
 {% extends 'base.html' %}
 
 {% block heading %}
-    | Home
-{% endblock %}
+ | About
+{% endblock  %}
 
-{% block styles %}
-    <style>
-        .home-link::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 10px;
-            background-color: #049696;
-            margin-top: 8px;
-        }
-
-        .home-link:hover::after {
-            height: 10px;
-            margin-top: 8px;
-        }
-    </style>
-{% endblock %}
-{% block home_btn %}
-    <a href="{% url 'home' %}" class="home-link" style="font-weight: bold; color: #049696;">Home</a>
-{% endblock %}
-
-{% block content %}
-    <h1>Home Page</h1>
-{% endblock %}
+{% block about_btn %}
+<a href="{% url 'about' %}" class="about-link" style="font-weight: bold; color: #049696;">About</a>
+{% endblock %} 
+{% block content %}    
+   <h1>About Page</h1>
+{% endblock  %}
+    

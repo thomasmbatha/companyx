@@ -14,6 +14,7 @@ header {
   width: 100%;
   padding: 10px;
   transition: left 0.3s ease;
+  z-index: 10; /* Ensure header stays on top */
 }
 
 header .navbar {
@@ -35,15 +36,28 @@ header .navbar {
 }
 
 .navbar a {
-  color: #000;
-  font-weight: 500;
+  color: #171c19;
+  font-weight: bold;
   font-size: 18px;
   text-decoration: none;
   transition: 0.2s ease;
+  position: relative; /* Add position: relative for the underline */
 }
 
-.navbar a:hover {
-  color: #049696;
+.navbar a::after {
+  content: '';
+  display: block;
+  width: 0; /* Set the initial width to 0 */
+  height: 2px; /* Adjust the height of the underline as needed */
+  background-color: #049696;
+  position: absolute;
+  bottom: -5px; /* Adjust the bottom position to align with the text */
+  left: 0;
+  transition: width 0.3s; /* Add transition for smooth animation */
+}
+
+.navbar a:hover::after {
+  width: 100%; /* Set width to 100% on hover */
 }
 
 .hero-section {
@@ -54,6 +68,7 @@ header .navbar {
   display: flex;
   align-items: center;
   padding: 0 20px;
+  margin-top: 70px; /* Add space for the fixed header */
 }
 
 .hero-section .content {
@@ -74,7 +89,7 @@ header .navbar {
 }
 
 #hamburger-button-btn {
-  color: #000;
+  color: #171c19;
   cursor: pointer;
   display: none;
 }
@@ -82,7 +97,8 @@ header .navbar {
   display: flex;
   gap: 10px;
 }
-/* media sections */
+
+/* Media sections */
 @media (max-width: 768px) {
   header {
     padding: 10px;
@@ -132,12 +148,14 @@ header .navbar {
   }
 
   .navbar a {
-    color: #000;
+    color: #171c19;
+    font-size: 16px; /* Adjust font size as needed */
   }
 
   .hero-section .content {
     text-align: center;
   }
-
-  
+  .navbar a::after {
+    bottom: 0;
+  }
 }

@@ -47,11 +47,11 @@ header .navbar {
 .navbar a::after {
   content: '';
   display: block;
-  width: 0; /* Set the initial width to 0 */
-  height: 2px; /* Adjust the height of the underline as needed */
+  width: 0px; /* Set the initial width to 0 */
+  height: 6px; /* Adjust the height of the underline as needed */
   background-color: #049696;
   position: absolute;
-  bottom: -5px; /* Adjust the bottom position to align with the text */
+  bottom: -10px; /* Adjust the bottom position to align with the text */
   left: 0;
   transition: width 0.3s; /* Add transition for smooth animation */
 }
@@ -157,5 +157,14 @@ header .navbar {
   }
   .navbar a::after {
     bottom: 0;
+    content: '';
+    display: block;
+    width: 0px; /* Set the initial width to 0 */
+    height: 6px; /* Adjust the height of the underline as needed */
+    background-color: #049696;
+    position: absolute;
+    bottom: -10px; /* Adjust the bottom position to align with the text */
+    left: 0;
+    transition: width 0.3s;
   }
 }

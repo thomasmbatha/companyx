@@ -3,8 +3,26 @@
 {% block heading %}
  | About
 {% endblock  %}
+{% block styles %}
+    <style>
+        .about-link::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 10px;
+            background-color: #049696;
+            margin-top: 8px;
+        }
+
+        .home-link:hover::after {
+            height: 10px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+    </style>
+{% endblock %}
 {% block about_btn %}
-    
+<a href="{% url 'about' %}" class="about-link" style="font-weight: bold; color: #049696;">About</a>
 {% endblock %}
 {% block content %}    
    <h1>About Page</h1>

@@ -165,7 +165,7 @@ header .navbar {
     position: absolute;
     bottom: -10px; /* Adjust the bottom position to align with the text */
     left: 0;
-    transition: width 0.3s;
+    transition: width 0px;
   }
 }
   /* Default button styles */
